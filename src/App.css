@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app, #app>div {
+  height: 100%;
+}
+#root {
+  min-height: 100vh;
+}
+
+.login {
+  margin: 0;
+  height: 100%;
+}
+.login-form {
+  width: 30%;
+  padding-top: 5%;
+  height: 300px;
+  margin-left: 35%;
+}
+
+/* .form-input-field {
+  margin-top: 60px;
+} */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f1f2f7 !important;
+}
+.navigation { 
+  background: #121211;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.nav-item {
+  padding: 0 4rem;
+}
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  padding: 20px;
+}
+.card {
+  margin-right: 5%;
+  margin-left: 2%;
+  height: 192px;
+}
+.cardButton {
+  margin: 5px 0 0 5rem;
+}
+.cardBody {
+  height: 150px;
+  overflow: hidden;
+}
+
+.full {
+  height: 100%;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.task-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+}
+.edit_task {
+  width: 50%;
+  /* display: flex; */
+  padding: 15px;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+.user-login {
+  display: block !important;
+}
+
+
+
+/* Side Bar CSS starts */
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+}
+.bm-item.wrapper {
+  position: relative;
+  width: 100%;
+  top: -34px;
+  font-weight: 600;
+  border-bottom: 2px solid #c2c9c9;
+  padding-bottom: 15px;
+}
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 18px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #525e60;;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Side Bar CSS ends */
+nav.bm-item-list a {
+  border-bottom: rgba(0,0,0,0.1) 1px solid;
+  border-top: rgba(255,255,255,0.1) 1px solid;
+  padding: 12px 10px !important;
+  color: #c2c9c9;
+  font-size: 14px;
+  line-height: 14px;
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+nav.bm-item-list a:hover {
+  background: #363b3ce3;
+  text-decoration: none;
+}
+ul.cards-ul {
+  width: 50%;
+  margin: 0 auto;
+}
