@@ -5,7 +5,7 @@ function* UPDATETASK() {
   yield takeEvery("UPDATE_TASK", function*(action) {
     yield put({ type: "UPDATE_TASK_STARTED" });
     try {
-      const DATA = yield axios.post('https://task-manage-asana.herokuapp.com/user/update-task', action.payload)
+      const DATA = yield axios.post('https://react-task-manager-backend.herokuapp.com/user/update-task', action.payload)
       .then(result => {
         if(result.data.status === "error")
         throw new Error("Task Update Successfully")

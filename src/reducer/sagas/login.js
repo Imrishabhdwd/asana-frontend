@@ -4,7 +4,7 @@ function* Login() {
   yield takeEvery("LOGIN", function*(action) {
     yield put({ type: "LOGIN_STARTED" });
     try {
-      const DATA = yield axios.post('https://task-manage-asana.herokuapp.com/user/get-user', action.payload)
+      const DATA = yield axios.post('https://react-task-manager-backend.herokuapp.com/user/get-user', action.payload)
       .then(result => {
         if(result.data.status === "error")
         throw new Error("No Account found for the this credentials")

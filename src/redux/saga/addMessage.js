@@ -5,7 +5,7 @@ function* ADDMESSAGE() {
   yield takeEvery("ADD_MESSAGE", function*(action) {
     yield put({ type: "ADD_MESSAGE_STARTED" });
     try {
-      const DATA = yield axios.post('https://task-manage-asana.herokuapp.com/user/add-task', action.payload)
+      const DATA = yield axios.post('https://react-task-manager-backend.herokuapp.com/user/add-task', action.payload)
       .then(result => {
         if(result.data.status === "error")
         throw new Error("No Account found for the this credentials")

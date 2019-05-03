@@ -6,7 +6,7 @@ function* ADMINSIGNUP() {
   yield takeEvery("SIGNUP", function*(action) {
     yield put({ type: "SIGNUP_STARTED" });
     try {
-      const DATA = yield axios.post('https://task-manage-asana.herokuapp.com/admin/add-admin', action.payload)
+      const DATA = yield axios.post('https://react-task-manager-backend.herokuapp.com/admin/add-admin', action.payload)
       .then(async result => {
         if(result.data.status === "error")
         throw new Error("No Account found for the this credentials")

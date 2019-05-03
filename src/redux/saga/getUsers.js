@@ -7,7 +7,7 @@ function* GETUSERS() {
   yield takeEvery("GET_USERS", function*(action) {
     yield put({ type: "GET_USERS_STARTED" });
     try {
-      const DATA = yield axios.post('https://task-manage-asana.herokuapp.com/user/get-users', action.payload)
+      const DATA = yield axios.post('https://react-task-manager-backend.herokuapp.com/user/get-users', action.payload)
       .then(result => {
         if(result.data.status === "error")
         throw new Error("No Task found")
